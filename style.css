@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    background-color: #150920;
+
+}
+h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#at{
+    color: red;;
+}
+
+
+/*Header Section*/
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: #38244a;
+    align-items:  center;
+    position: sticky;
+    top: 0px;
+    z-index: 10001;
+    border-bottom: 2px solid rgb(0, 0, 0);
+
+}
+
+
+.name{
+    margin-left: 2rem;
+    color: red;
+}
+.navbar a{
+    font-size: larger;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+/*Home Section*/
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.info{
+    height: 200px;
+    width: 600px;
+    color: white;
+    margin-left: 70px;
+}
+
+.info button{
+    margin-top: 2rem;
+    height: 40px;
+    width: 100px;
+    border-radius: 0.8rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    transition-duration: 0.6s;
+    border: 2px solid black;
+}
+
+.info button:hover{
+    background-color: transparent;
+}
+
+
+.image img{
+    height: 350px;
+    width: 350px;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+
+
+/* ==================== About section css code ============================ */
+.about{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    background-color: #38244a;
+    height: 100vh;
+}
+
+.about .about-img{
+    position: relative;
+    
+}
+
+.about .about-img .aboutHero{
+    width: 400px;
+    height: 400px;
+    height: auto;
+    margin-left: 10rem;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+.about-content{
+    padding: 1rem 0;
+    width: 500px;
+    height: 400px;
+    margin-left: 5rem;
+    color: white;
+}
+
+.about-content h2{
+    color: white;
+}
+
+.about-content h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: .5rem 0;
+}
+
+.about-content p{
+    color: white;
+}
+
+.text-box p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.about-btn{
+    margin: .8rem 0;
+}
+
+.about-btn button,.cvContent a{
+    background: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0,
+                  rgba(60,64,67,0.15)0px 2px 6px 2px;
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+.about-btn button.active{
+    background:#150920 ;
+    color: #ffff;
+}
+
+.text-box{
+    margin: .8rem 0;
+
+}
+
+.content-btn > .content:not(:first-child){
+    display: none;
+}
+
+.about-btn button:hover{
+    box-shadow: var(--hover-box-shadow);
+}
+
+.cvContent{
+    margin-top: 90px;
+    
+}
+
+.cvContent a{
+    text-decoration: none;
+}
+
+
+
+/*-------------------------------------Skill---------------------------------------------------------*/  
+
+
+#skill{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 192, 203, 0.293);
+    position: relative;
+    top: 0rem;
+    right: 17rem;
+    z-index: -1;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.circle1{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 192, 203, 0.293);
+    position: relative;
+    bottom: 10rem;
+    left: 20rem;
+    z-index: -1;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.circle2{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 192, 203, 0.293);
+    position: relative;
+    bottom: 10rem;
+    left: -5rem;
+    z-index: -1;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.skill-image img{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    bottom: 5rem;
+    right: 3rem;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.technical-skill ul li{
+    list-style: none;
+    margin-bottom: 3rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 400px;
+    height: 100%;
+    padding: 2px;
+}
+
+.technical-skill h1{
+    margin-bottom: 5rem;
+    font-size: xx-large;
+}
+
+/*----------------------------------------Projects CSS----------------------------------------------------*/
+#projects{
+    width: 100%;
+    height: 100vh;
+    background-color: #38244a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding-top: 5rem;
+}
+
+#projects h1{
+    position: relative;
+    right: 40rem;
+    top: 4%;
+}
+
+.span{
+    display: flex;
+    flex-direction: row;
+}
+.project{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+#automatic{
+    margin-top: 10px;
+    height: 250px;
+    width: 95%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+/*------------------------------------------------Achievement CSS------------------------------------*/
+#achievement{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent; 
+    display: flex;
+    color: white;
+    padding-top: 5rem;
+
+}
+
+#achievement ul{
+    margin-top: 1rem;
+    margin-left: 5rem;
+    list-style: none;
+    border-radius: 10px;
+    width: 700px;
+    margin-top: 10rem;
+}
+
+#achievement h1{
+    margin-left: 5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+#achievement ul li{
+border: 2px solid white;
+margin-bottom: 1rem;
+display: flex;
+justify-content: space-between;
+border-radius: 10px;
+padding: 5px;
+margin-top: 30px;
+}
+
+#achievement ul li button{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/*--------------------------------------Contact US CSS--------------------------------------------------------*/
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color: #38244a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form h1{
+    margin-right: 20rem;
+    margin-bottom: 2rem;
+    font-size: xx-large;
+}
+
+#contact input{
+    width: 400px;
+    height: 40px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+}
+#contact textarea{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+form button{
+    width: 100px;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 20px;
+    border: none;
+}
+
+.icons{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+    font-weight: 900;
+    margin-top: 10PX;
+    
+   
+   
+}
+.icons a{
+    
+}
+
+.icons {
+    padding: 5px;
+    margin-left: 100px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+/* Responsive*/
+
+.hover-underline-animation a {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .hover-underline-animation a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+  *,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+    margin-left: -10rem;
+    margin-right: 5rem;
+}
+
+.shape {
+	background: linear-gradient(45deg, #ffffff  0%, #00bef3 100%);
+	animation: morph 8s ease-in-out infinite;
+	border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	height: 350px;
+	width: 350px;
+	box-shadow: 0 0 20px #000
+}
+
+
+/* -----------------------------------------------------------------last tag */
+
+
+.last{
+    border-top: 1px solid white;
+    height: 100px;
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 40%;
+    color: white;
+    
+}
+.last i{
+    margin-right: 10px;
+    margin-top: 25PX;
+    color: white;
+    opacity: 0.5;
+}
+
+i:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------last tag */
+
+
+@keyframes morph {
+	0% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+		background-size: 100% 100%;
+	}
+
+	50% {
+		border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+		background-size: 300% 150%;
+	}
+
+	100% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+		background-size: 100% 100%;
+	}
+}
+
+
+
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.about-image {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+    margin-left: 10rem;
+}
+
+.shap {
+        width: 400px;
+        height: 400px;
+        background: linear-gradient(64.00916346799386deg, rgba(243, 72, 104,1) 23.44140625%,rgba(242, 71, 104,1) 23.44140625%,rgba(158, 0, 236,1) 79.84765625%);
+        animation: wave 4.0s ease-in-out infinite;
+        &:nth-of-type(2) {
+        width: 800px;
+        height: 800px;
+          position: absolute;
+          top: -200px;
+          left: -400px;
+          opacity: .1;
+          z-index: -1;
+        }
+        &:nth-of-type(3) {
+        width: 300px;
+        height: 300px;
+          position: absolute;
+          bottom: -30px;
+          right: 0; 
+          opacity: .1;
+          z-index: -1;
+        }
+      }
+      @keyframes wave {
+        0%, 100% {
+          border-radius: 30% 30% 30% 38% / 27% 21% 39% 30%;
+        }
+        50% {
+          border-radius: 27% 33% 24% 46% / 20% 38% 22% 30%;
+        }
+      }
+
+     
+
+
+
+
+.award{
+    opacity: 0%;
+}
+
+.awardjs{
+    opacity: 100%;
+}
